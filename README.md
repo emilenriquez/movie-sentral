@@ -1,3 +1,16 @@
+# MOVIE SENTRAL
+
+nextJS 13 implementation of an online database of information related to films, television series, podcasts, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews. - IMDB
+
+features
+- uses tailwindcss
+- darkmode switching implementation
+- hydration handling server-side vs client-side
+and more...
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
