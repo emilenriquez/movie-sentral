@@ -1,5 +1,7 @@
+import DarkmodeSwitch from "../DarkmodeSwitch";
 import MenuItem from "./MenuItem";
 import {GoHome, GoInfo } from "react-icons/go";
+
 
 
 export default function header() {
@@ -12,9 +14,13 @@ export default function header() {
       </div>
 
       {/* LOGO */}
-      <div>
-        <span className="bg-amber-200 rounded px-2 py-1 text-black font-extrabold mr-1">MOVIE</span>
-        <span className="italic text-amber-400  text-1xl">sentral</span>
+      <div className="flex items-center space-x-2">
+        <DarkmodeSwitch className="mr-2" />
+        <div className=" transition-colors duration-500 font-mono">
+          <span className="bg-purple-900 dark:bg-amber-200 rounded px-2 py-1 text-amber-200 dark:text-black font-extrabold mr-0.5 tracking-wider text-2xl">MOVIE</span>
+          <span className="italic text-lg text-purple-950 dark:text-amber-400">sentral</span>
+        </div>
+
       </div>
 
     </div>
