@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MenuItem({title, link, Icon}) {
   return (
-    <div className="mx-2 hover:text-teal-600">
+    <div className="hover:text-teal-600">
       <Link href={link} className="flex ">
         <Icon className="lg:hidden text-2xl" />
         <h2 className="hidden sm:inline sm:ml-2 text-lg uppercase">

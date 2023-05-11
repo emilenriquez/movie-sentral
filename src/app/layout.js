@@ -24,7 +24,9 @@ export default function RootLayout({ children }) {
         {/* NAVBAR */}
 
         {/* SEARCHBOX */}
-        {children}
+        <div className=' max-w-6xl mx-auto my-4'>
+          {children}
+        </div>
 
         {/* FOOTER */}
 

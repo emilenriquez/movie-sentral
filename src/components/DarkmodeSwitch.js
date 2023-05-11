@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import {GiLightBulb, GiMoon} from 'react-icons/gi'
+import { GiMoon } from 'react-icons/gi'
 import {BsSunFill} from 'react-icons/bs'
 import { useTheme } from 'next-themes'
 import { useHydrated } from 'react-hydration-provider'
@@ -35,5 +35,5 @@ export default function DarkmodeSwitch({...rest}) {
 
 
 
-  return isHydrated && renderToggleButton()
+  return isHydrated ? renderToggleButton() : console.warn('unable to render dark mode toggler');
 }
