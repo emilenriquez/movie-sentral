@@ -1,30 +1,13 @@
-import Image from 'next/image'
-import { Suspense } from 'react';
-import Stocks from '@/components/stocks/list';
-
-async function getData() {
-  const res = await fetch('http://localhost:3900/stock-inventories');
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-
-  // Recommendation: handle errors
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data');
-  }
-
-  return res.json();
-}
+import Stocks from '@/components/stocks';
 
 export default function Home() {
-  const stocks = getData();
-
 
   return (
     <main className=''>
-      <Suspense fallback="loading...">
+      <Stocks />
+      {/* <Suspense fallback="Loading...">
           <Stocks promise={stocks} />
-      </Suspense>
+      </Suspense> */}
     </main>
   )
 
