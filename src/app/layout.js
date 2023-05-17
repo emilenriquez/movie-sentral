@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import NavBar from '@/components/NavBar'
 import Providers from './providers'
+import Modal from '@/components/Shared/Modal'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         {/* SEARCHBOX */}
         <div className=' max-w-6xl mx-auto my-2'>
           {children}
+
         </div>
 
         {/* FOOTER */}

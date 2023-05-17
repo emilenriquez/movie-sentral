@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function ABOUT() {
+export default function About() {
   return (
     <main className='mt-3 space-y-6'>
       <h1 className=' text-slate-900 dark:text-amber-200 font-light italic text-3xl tracking-wide'> About </h1>
