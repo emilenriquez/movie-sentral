@@ -5,6 +5,7 @@ import {HiChevronLeft, HiChevronRight} from 'react-icons/hi2'
 export default function StockDatePicker({date = Date.now(),  onNext, onPrevious}) {
   const router = useRouter();
   const format = 'YYYY-MM-DD';
+  console.log('datepicker:', date);
 
 
   const navigate =(opt) => {

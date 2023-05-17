@@ -6,7 +6,7 @@ const tabs = [
   { name: 'Manage Stocks', href: '/', current: true },
   { name: 'Manage Categories', href: '#', current: false },
   { name: 'Daily Inventory', href: '/daily-inventory', current: false },
-  { name: 'Order Stocks', href: '#', current: false },
+  { name: 'Order', href: '/stocks/order', current: false },
   { name: 'Manage Sales', href: '#', current: false },
 ]
 

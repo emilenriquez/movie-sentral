@@ -10,7 +10,7 @@ import ListPlaceHolder from '../Shared/PlaceHolders/ListPlaceHolder';
 export default function DailyInventoryForm() {
   const stocks = getStocks();
   const searchParams = useSearchParams();
-  const date = searchParams.get('date')
+  const date = searchParams.get('date') || Date.now()
 
 
 
